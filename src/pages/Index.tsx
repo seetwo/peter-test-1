@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
-import { ChevronRight, Check, Star, BarChart3, Calculator, PieChart, LineChart, Calendar, TrendingUp } from "lucide-react";
+import { ChevronRight, Check, Clipboard, Search, Calculator, Target, Lightbulb, Users } from "lucide-react";
 import Hero from "@/components/Hero";
 import FeatureSection from "@/components/FeatureSection";
 import PricingSection from "@/components/PricingSection";
@@ -21,48 +21,48 @@ const Index = () => {
         
         <section id="tools" className="py-16">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold text-slate-800">Complete Toolkit for Advanced Analysis</h2>
+            <h2 className="text-3xl font-bold text-slate-800">Complete Toolkit for Smarter Betting</h2>
             <p className="text-slate-600 mt-4 max-w-2xl mx-auto">
-              Our comprehensive suite of tools gives you everything you need to make data-driven decisions.
+              Our comprehensive suite of tools gives you everything you need to make data-driven betting decisions.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <ToolCard 
-              title="Data Analyzer" 
-              description="Analyze trends with our powerful data visualization tool"
-              icon={<BarChart3 className="h-6 w-6" />}
+              title="Bet Tracker" 
+              description="Sync sportsbook accounts or manually input bets to monitor performance and ROI"
+              icon={<Clipboard className="h-6 w-6" />}
               isPremium={false}
             />
             <ToolCard 
-              title="Advanced Calculator" 
-              description="Perform complex calculations with our specialized formulas"
+              title="Prop Bet Analyzer" 
+              description="Find the best value prop bets with our powerful analysis engine and cheat sheets"
+              icon={<Target className="h-6 w-6" />}
+              isPremium={true}
+            />
+            <ToolCard 
+              title="Odds Comparison" 
+              description="Instantly compare live odds from top sportsbooks across spreads, totals, and moneylines"
+              icon={<Search className="h-6 w-6" />}
+              isPremium={false}
+            />
+            <ToolCard 
+              title="Betting Calculators" 
+              description="Quickly calculate parlay payouts, convert odds formats, and determine potential winnings"
               icon={<Calculator className="h-6 w-6" />}
-              isPremium={true}
-            />
-            <ToolCard 
-              title="Projection System" 
-              description="See future trends with our AI-powered projection system"
-              icon={<LineChart className="h-6 w-6" />}
-              isPremium={true}
-            />
-            <ToolCard 
-              title="Statistics Hub" 
-              description="Access comprehensive statistics in one centralized location"
-              icon={<PieChart className="h-6 w-6" />}
               isPremium={false}
             />
             <ToolCard 
-              title="Trend Tracker" 
-              description="Monitor market movements and identify key patterns"
-              icon={<TrendingUp className="h-6 w-6" />}
+              title="Expert Picks & Analysis" 
+              description="Access daily picks, predictions, and in-depth analysis from verified betting experts"
+              icon={<Lightbulb className="h-6 w-6" />}
               isPremium={true}
             />
             <ToolCard 
-              title="Event Scheduler" 
-              description="Stay organized with our integrated calendar system"
-              icon={<Calendar className="h-6 w-6" />}
-              isPremium={false}
+              title="Consensus Picks" 
+              description="Gauge market sentiment by seeing how the public and sharps are betting on games"
+              icon={<Users className="h-6 w-6" />}
+              isPremium={true}
             />
           </div>
           
