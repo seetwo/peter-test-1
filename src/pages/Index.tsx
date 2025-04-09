@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
-import { ChevronRight, Check, Star, BarChart3, Calculator, PieChart, ChartLineUp, Calendar, TrendingUp } from "lucide-react";
+import { ChevronRight, Check, Star, BarChart3, Calculator, PieChart, LineChart, Calendar, TrendingUp } from "lucide-react";
 import Hero from "@/components/Hero";
 import FeatureSection from "@/components/FeatureSection";
 import PricingSection from "@/components/PricingSection";
@@ -43,7 +43,7 @@ const Index = () => {
             <ToolCard 
               title="Projection System" 
               description="See future trends with our AI-powered projection system"
-              icon={<ChartLineUp className="h-6 w-6" />}
+              icon={<LineChart className="h-6 w-6" />}
               isPremium={true}
             />
             <ToolCard 
