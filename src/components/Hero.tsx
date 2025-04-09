@@ -10,14 +10,11 @@ const Hero = () => {
           Make Smarter Bets with Pro-Level Tools
         </h1>
         <p className="text-xl text-slate-600 max-w-lg">
-          Our suite of betting tools helps you find the best odds, analyze props, track bets, calculate payouts, and leverage expert insights.
+          Sync your sportsbooks for effortless bet tracking in your personal Dashboard. Then, leverage our integrated suite of tools—from live odds comparison and prop analysis to calculators and expert picks—to bet smarter.
         </p>
         <div className="flex flex-wrap gap-4">
           <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
             Get Started <ChevronRight className="ml-2 h-4 w-4" />
-          </Button>
-          <Button size="lg" variant="outline">
-            View Demo
           </Button>
         </div>
         <div className="flex items-center text-sm pt-4">
