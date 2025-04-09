@@ -1,7 +1,7 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ChartLineUp, BarChart2, Laptop, Database, Share2, ShieldCheck } from "lucide-react";
+import { LineChart, BarChart2, Laptop, Database, Share2, ShieldCheck } from "lucide-react";
 
 const FeatureSection = () => {
   return (
@@ -16,7 +16,7 @@ const FeatureSection = () => {
       <Tabs defaultValue="analytics" className="max-w-4xl mx-auto">
         <TabsList className="grid grid-cols-3 mb-8 h-auto p-1">
           <TabsTrigger value="analytics" className="py-3 data-[state=active]:bg-blue-50 data-[state=active]:text-blue-600">
-            <ChartLineUp className="mr-2 h-4 w-4" />
+            <LineChart className="mr-2 h-4 w-4" />
             Analytics
           </TabsTrigger>
           <TabsTrigger value="insights" className="py-3 data-[state=active]:bg-blue-50 data-[state=active]:text-blue-600">
@@ -39,19 +39,19 @@ const FeatureSection = () => {
               <ul className="mt-4 space-y-2">
                 <li className="flex items-center">
                   <span className="bg-green-100 p-1 rounded-full mr-2">
-                    <ChartLineUp className="h-4 w-4 text-green-600" />
+                    <LineChart className="h-4 w-4 text-green-600" />
                   </span>
                   <span className="text-slate-700">Custom reporting dashboards</span>
                 </li>
                 <li className="flex items-center">
                   <span className="bg-green-100 p-1 rounded-full mr-2">
-                    <ChartLineUp className="h-4 w-4 text-green-600" />
+                    <LineChart className="h-4 w-4 text-green-600" />
                   </span>
                   <span className="text-slate-700">Advanced data visualization</span>
                 </li>
                 <li className="flex items-center">
                   <span className="bg-green-100 p-1 rounded-full mr-2">
-                    <ChartLineUp className="h-4 w-4 text-green-600" />
+                    <LineChart className="h-4 w-4 text-green-600" />
                   </span>
                   <span className="text-slate-700">Trend analysis tools</span>
                 </li>
